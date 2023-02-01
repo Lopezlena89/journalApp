@@ -14,8 +14,8 @@ export const LoginPage = () => {
 
   const dispatch = useDispatch();
 
-  const {status,errorMessage} = useSelector(state => state.auth);
-
+  const {status,errorMessage,uid} = useSelector(state => state.auth);
+  
   const {email, password, onInputChange} = useForm({
     email:'',
     password:'',
