@@ -35,7 +35,7 @@ export const startCreatingUserWithEmailPassword = ({ email, password, displayNam
 
 export const startLoginWithEmailPassword = ({email,password}) =>{
     return async(dispatch)=>{
-        dispatch(checkingCredentials());
+        dispatch(checkingCredentials());    
 
         const result = await loginWithEmailPassword({email,password});
         console.log(result);
@@ -54,6 +54,8 @@ export const startLogout = () =>{
         
     }
 }
+
+
 
 
 

@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux"
-import { IconButton, Typography } from "@mui/material"
+import { IconButton } from "@mui/material"
 import { AddOutlined } from "@mui/icons-material"
 import { JournalLayout } from "../layout/JournalLayout"
 import { NoteView, NothingSelectedView } from "../views"

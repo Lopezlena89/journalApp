@@ -22,7 +22,7 @@ export const LoginPage = () => {
   const {email, password, onInputChange} = useForm(formData)
 
   const isAuthenticating = useMemo(()=>status ==='checking',[status])
-
+  console.log(isAuthenticating)
   const onSubmit = (event)=>{
     event.preventDefault();
     // console.log({email,password});
